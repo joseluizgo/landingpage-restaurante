@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'destaque';
+    src: url(fontes/Lovalina\ Regular.otf);
+}
+
+:root {
+    --cor-fundo: #404040;
+    --cor-segundaria: #937038;
+
+    --font-destaque: 'destaque';
+}
