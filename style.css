@@ -51,6 +51,7 @@ nav a:hover{
 }
 
 nav img {
+    justify-content: right;
     width: 25px;
     padding-top: 10px;
 }
@@ -93,4 +94,46 @@ header button {
     color: white;
     background-color: var(--cor-segundaria);
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.205);
+}
+
+header button:hover{
+    background-color: #886733;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+main h2 {
+    color: white;
+    font-family: var(--font-destaque);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 1.9em;
+    padding-left: 30px;
+    text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.199);
+}
+
+.sobre-nos {
+    display: flex;
+    align-items: flex-start; 
+    text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.342);
+    gap: 40px;
+}
+
+.sobre-nos img {
+    max-width: 350px;
+    min-width: 250px;
+    border-radius: 3px;
+    object-fit: cover;
+    margin-left: 30px;
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.205);
+}
+
+.texto {
+    max-width: 600px;
+    min-width: 500px;
+    color: white;
+    padding-right: 30px;
+    font-size: 1.5em;
+    text-align: right;
+    text-justify: ;
 }
