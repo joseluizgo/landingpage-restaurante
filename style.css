@@ -160,3 +160,8 @@ main h2 {
     text-align: center;
     padding-bottom: 8px;
 }
+
+#mae {
+    display: flex;
+    justify-content: center;
+}
