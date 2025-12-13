@@ -29,8 +29,11 @@ body {
 nav {
     text-align: right;
     text-decoration: none;
-    padding-bottom: 10px;
-    margin-bottom: 5px;
+    padding-bottom: 15px;
+}
+
+div.nav-container {
+    padding: 3px;
 }
 
 div.nav-container > img {
@@ -39,13 +42,13 @@ div.nav-container > img {
     align-items: center;
     justify-content: center;
     width: 30px;
+    position: absolute;
 }
 
 nav a {
     color: var(--cor-segundaria);
     text-decoration: none;
     font-weight: bold;
-    padding: 10px;
     border-radius: 6px;
     padding-right: 15px;
 }
