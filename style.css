@@ -164,8 +164,9 @@ main h2 {
 }
 
 #mae .menu:hover{
+    cursor: pointer;
     transition: 2s;
-    width: 300px;
+    width: 1200px;
 }
 
 .menu p , h3 {
@@ -186,3 +187,4 @@ main h2 {
     display: flex;
     justify-content: center;
 }
+
