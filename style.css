@@ -52,12 +52,15 @@ nav {
 }
 
 header {
+    display: flex;
     background-image: url(img/pizzagrande1.png);
     background-position: center;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    height: 300px;
+    background-size: cover;
+    padding-bottom: 20px;
     box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.205);;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 header h1 {
@@ -79,21 +82,18 @@ header p {
 }
 
 header button {
-    display: block;
-    margin: auto;
-    border: none;
+    border: 2px solid var(--cor-texto-primario);
     padding: 13px 20px;
     margin-top: 10px;
-    border-radius: 30px;
     font-size: 15px;
-    color: white;
-    background-color: var(--cor-segundaria);
-    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.205);
+    color: var(--cor-texto-primario);
+    background-color: transparent;
+    transition: 0.5s;
 }
 
 header button:hover{
-    background-color: #886733;
-    transition: 0.3s;
+    color: var(--cor-segundaria);
+    background-color: var(--cor-texto-primario);
     cursor: pointer;
 }
 
@@ -144,25 +144,36 @@ main h2 {
     .sobre-container img {
         width: 90%;
     }
+
+    .mae {
+        flex-direction: column;
+        display: flex;
+        gap: 40px;
+        align-items: center;
+    }
+
+    .card {
+        width: 80%;
+
+    }
 }
-.menu {
-    display: inline-block;
+.card {
     margin: 0px 2%;
     transition: transform 0.8s ease;
 }
 
-.menu img {
+.card img {
     width: 100%;
     min-width: none;
     box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.116);
 }
 
-#mae .menu:hover{
+.mae .card:hover{
     cursor: pointer;
     transform: scale(1.1);
 }
 
-.menu p , h3 {
+.card p , h3 {
     text-align: center;
     padding-top: 10px;
     background-color: white;
@@ -170,13 +181,13 @@ main h2 {
     margin-top: -5px;
 }
 
-.menu p {
+.card p {
     font-size: 0.8em;
     font-weight: bold;
     color: rgb(58, 58, 58);
 }
 
-#mae {
+.mae {
     display: flex;
     justify-content: center;
 }
