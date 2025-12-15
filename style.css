@@ -213,6 +213,7 @@ footer {
     justify-content: center;
     position: absolute;
     left: 30px;
+    padding-right: 10px;
 }
 
 .rodape-redes > a > img{
